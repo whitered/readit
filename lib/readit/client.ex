@@ -1,4 +1,9 @@
 defmodule Readit.Client do
+  @moduledoc """
+  This is a client to access the reddit json api over http
+
+  See documentation for HTTPoison.Base for more information
+  """
   use HTTPoison.Base
 
   @expected_fields ~w(
@@ -12,10 +17,10 @@ defmodule Readit.Client do
     mod_reports visited num_reports ups
   )
 
-  def process_url(url) do
-    "http://www.reddit.com" <> url
-  end
+  @doc "Callback for HTTPoison"
+  def process_url(url), do: "http://www.reddit.com" <> url
 
+  @doc "Callback for HTTPoison"
   def process_response_body(body) do
     body
     |> Poison.decode!

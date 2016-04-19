@@ -18,6 +18,7 @@ defmodule Readit.Mixfile do
 
   defp deps do
     [
+      {:ex_doc,    "~> 0.11", only: [:dev]},
       {:poison,    "~> 2.1"},
       {:httpoison, "~> 0.8"}
     ]
