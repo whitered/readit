@@ -24,6 +24,13 @@ defmodule Readit.Sub do
   end
 
   @doc """
+  Gets first page of hot posts from a subreddit
+  """
+  def hot(sub) do
+    Client.get!("#{sub.name}/hot.json").body
+  end
+
+  @doc """
   Gets all the recent image posts from a subreddit
   """
   def recent_images(sub) do
