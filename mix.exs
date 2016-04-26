@@ -13,7 +13,7 @@ defmodule Readit.Mixfile do
   end
 
   def application do
-    [applications: [:logger, :httpoison]]
+    [applications: [:mix]]
   end
 
   defp deps do
