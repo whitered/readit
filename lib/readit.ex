@@ -1,8 +1,11 @@
 defmodule Readit do
-  alias Readit.Sub
+  @moduledoc """
+  Readit is a simple, read-only reddit api client mostly suitable for getting
+  images from a particular subreddit page.
+  """
 
   @doc """
-  Create a new Readit.Sub struct
+  Convenience function for easily creating a new Readit.Sub struct
   """
-  def sub(name), do: Sub.new(name)
+  def sub(name), do: Readit.Sub.new(name)
 end
