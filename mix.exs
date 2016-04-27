@@ -29,7 +29,6 @@ defmodule Readit.Mixfile do
     [files: ["lib", "config", "mix.exs", "README*"],
      maintainers: ["Adam Zaninovich"],
      licenses: ["MIT"],
-     links: %{"GitHub" => "https://github.com/adamzaninovich/readit",
-              "Docs"   => "https://github.com/adamzaninovich/readit"}]
+     links: %{"GitHub" => "https://github.com/adamzaninovich/readit"}]
   end
 end

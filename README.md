@@ -55,4 +55,4 @@ The package can be installed as:
     #=> http://i.imgur.com/rh8Y5PS.gif
     ```
 
-See [the docs](https://hexdocs.pm/readit) for more info.
+See [the docs](https://hexdocs.pm/readit/) for more info.
