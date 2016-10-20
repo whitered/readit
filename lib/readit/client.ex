@@ -18,7 +18,7 @@ defmodule Readit.Client do
   )
 
   @doc "Callback for HTTPoison"
-  def process_url(url), do: "http://www.reddit.com" <> url
+  def process_url(url), do: "https://www.reddit.com" <> url
 
   @doc "Callback for HTTPoison"
   def process_response_body(body) do
