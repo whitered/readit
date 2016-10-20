@@ -3,7 +3,7 @@ defmodule Readit.ClientTest do
   alias Readit.Client
 
   test "process_url callback adds the domain to the path" do
-    assert Client.process_url("/path") == "http://www.reddit.com/path"
+    assert Client.process_url("/path") == "https://www.reddit.com/path"
   end
 
   test "process_response_body parses and maps the response (excluding unknown keys)" do
