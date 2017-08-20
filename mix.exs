@@ -4,7 +4,7 @@ defmodule Readit.Mixfile do
   def project do
     [app: :readit,
      version: "0.0.4",
-     elixir: "~> 1.2",
+     elixir: "~> 1.5",
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
      description: "A Simple Read-Only Reddit API Client",
@@ -18,10 +18,9 @@ defmodule Readit.Mixfile do
 
   defp deps do
     [
-      {:earmark, "~> 0.2", only: :dev},
-      {:ex_doc, "~> 0.11", only: :dev},
-      {:poison, "~> 2.1"},
-      {:httpoison, "~> 0.8"}
+      {:ex_doc, ">= 0.0.0", only: :dev},
+      {:poison, "~> 3.0"},
+      {:httpoison, "~> 0.13"}
     ]
   end
 
