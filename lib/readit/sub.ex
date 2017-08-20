@@ -16,14 +16,14 @@ defmodule Readit.Sub do
   Gets all the recent posts from a subreddit
   """
   def recent(sub) do
-    http.get!("#{sub.name}/new.json").body
+    http().get!("#{sub.name}/new.json").body
   end
 
   @doc """
   Gets first page of hot posts from a subreddit
   """
   def hot(sub) do
-    http.get!("#{sub.name}/hot.json").body
+    http().get!("#{sub.name}/hot.json").body
   end
 
   @doc """

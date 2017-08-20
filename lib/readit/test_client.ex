@@ -7,7 +7,7 @@ defmodule Readit.TestClient do
   Stubs the `get!` function for testing
   """
   def get!(url) do
-    send self, {:get, url: url}
+    send(self(), {:get, url: url})
     %{body: [
       %{url: "test.jpg"},
       %{url: "test.txt"}
